@@ -40,7 +40,7 @@ python bin/train.py --cfg PATH_TO_CFG [--ckpt PATH_TO_CKPT] [--evaluation]
 | train       | [ckpt](https://github.com/VisualComputingInstitute/Person_MinkUNet/releases/download/v1.0/ckpt_e40_train.pth) | [cfg](https://github.com/VisualComputingInstitute/Person_MinkUNet/releases/download/v1.0/unet_bl_voxel_jrdb_0.05_0.1.yaml) |
 | train + val | [ckpt](https://github.com/VisualComputingInstitute/Person_MinkUNet/releases/download/v1.0/ckpt_e40_train_val.pth) | [cfg](https://github.com/VisualComputingInstitute/Person_MinkUNet/releases/download/v1.0/unet_bl_voxel_jrdb_0.05_0.1.yaml) |
 
-# Acknowledge
+# Acknowledgement
 
 - torchsparse [(link)](https://github.com/mit-han-lab/torchsparse)
 - PointRCNN [(link)](https://github.com/sshaoshuai/PointRCNN/tree/master/lib/utils/iou3d)
