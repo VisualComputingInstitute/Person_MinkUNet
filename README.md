@@ -4,7 +4,7 @@ PyTorch implementation of Person-MinkUNet.
 Winner of JRDB 3D detection challenge in JRDB-ACT Workshop at CVPR 2021
 [`[arXiv]`](https://arxiv.org/abs/2107.06780)
 [`[video]`](https://www.youtube.com/watch?v=RnGnONoX9cU)
-[`[leaderboard]`](https://jrdb.stanford.edu/leaderboards/detection).
+[`[leaderboard]`](https://jrdb.erc.monash.edu/leaderboards/detection).
 
 # Prerequisite
 
