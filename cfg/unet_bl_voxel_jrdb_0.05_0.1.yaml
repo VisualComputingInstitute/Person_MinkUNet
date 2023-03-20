@@ -1,0 +1,46 @@
+dataloader:
+  batch_size: 36
+  num_workers: 4
+dataset:
+  additional_features:
+  - intensity
+  - time
+  augmentation: true
+  canonical: false
+  included_classes:
+  - pedestrian
+  name: JRDB
+  nsweeps: 10
+  num_points: 30000
+  voxel_size:
+  - 0.05
+  - 0.05
+  - 0.1
+model:
+  disentangled_loss: false
+  kwargs:
+    cr: 1.0
+    fpn: false
+    num_anchors: 1
+    num_ori_bins: 12
+    run_up: true
+  target_mode: 2
+  type: MinkUNet
+pipeline:
+  Logger:
+    backup_list: []
+    log_dir: ./logs/
+    log_fname: log.txt
+    tag: unet_bl_voxel_jrdb_0.05_0.1
+    use_timestamp: true
+  Optim:
+    scheduler_kwargs:
+      epoch0: 15
+      epoch1: 40
+      lr0: 0.001
+      lr1: 1.0e-06
+  Trainer:
+    ckpt_interval: 8
+    epoch: 40
+    eval_interval: 100000.0
+    grad_norm_clip: -1.0
